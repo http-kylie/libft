@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kytan <kytan@student.42.fr>                +#+  +:+       +#+        */
+/*   By: kytan <kytan@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/23 11:22:10 by kytan             #+#    #+#             */
-/*   Updated: 2024/06/02 14:18:41 by kytan            ###   ########.fr       */
+/*   Updated: 2024/06/17 10:56:31 by kytan            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,10 +45,12 @@ int		ft_isdigit(int c);
 int		ft_isalnum(int c);
 int		ft_isascii(int c);
 int		ft_isprint(int c);
+int		ft_isspace(int c);
 int		ft_toupper(int c);
 int		ft_tolower(int c);
 
 int		ft_atoi(const char *nptr);
+int		ft_atoi_base(const char *str, const char *base);
 
 char	*ft_substr(char const *s, unsigned int start, size_t len);
 char	*ft_strjoin(char const *s1, char const *s2);
@@ -75,7 +77,7 @@ void	ft_lstclear(t_list **lst, void (*del)(void *));
 void	ft_lstiter(t_list *lst, void (*f)(void *));
 
 int		ft_intlen(int nb);
-int		ft_strchr_i(char *str, char c);
+int		ft_strchr_i(const char *str, char c);
 void	ft_swap_address(char **a, char **b);
 
 char	*get_next_line(int fd);
