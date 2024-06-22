@@ -26,7 +26,12 @@ int	ft_atoi_base(const char *str, const char *base)
 		if (*str++ == '-')
 			sign *= -1;
 	}
-	while (ft_strchr_i(base, *str) != -1)
-		nb = nb * ft_strlen(base) + ft_strchr_i(base, *str++);
+	while (ft_strchr_i(base, *str) != -1 || ft_strchr_i(base, ft_toupper(*str)) != -1)
+	{
+		if (ft_strchr_i(base, *str) != -1)
+			nb = nb * ft_strlen(base) + ft_strchr_i(base, *str++);
+		else
+			nb = nb * ft_strlen(base) + ft_strchr_i(base, ft_toupper(*str++));
+	}
 	return (nb * sign);
 }

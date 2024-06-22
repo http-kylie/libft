@@ -6,7 +6,7 @@
 /*   By: kytan <kytan@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/23 11:22:10 by kytan             #+#    #+#             */
-/*   Updated: 2024/06/17 10:56:31 by kytan            ###   ########.fr       */
+/*   Updated: 2024/06/20 09:15:00 by kytan            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -82,4 +82,8 @@ void	ft_swap_address(char **a, char **b);
 
 char	*get_next_line(int fd);
 int		ft_printf(const char *format, ...);
+
+int	ft_abs(int x);
+int	ft_greater(int x, int y);
+
 #endif

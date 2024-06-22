@@ -10,7 +10,7 @@ SRCS = \
 		ft_calloc.c ft_strdup.c ft_substr.c ft_strjoin.c ft_strtrim.c ft_split.c \
 		ft_itoa.c ft_strmapi.c ft_striteri.c ft_putchar_fd.c ft_putstr_fd.c \
 		ft_putendl_fd.c ft_putnbr_fd.c ft_lstlast.c ft_intlen.c ft_swap_address.c \
-		ft_strchr_i.c ft_isspace.c ft_atoi_base.c
+		ft_strchr_i.c ft_isspace.c ft_atoi_base.c ft_abs.c ft_greater.c
 OBJS = $(SRCS:.c=.o)
 
 # bonus
